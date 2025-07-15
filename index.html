@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Star Access Enterprise | Pinjaman Peribadi Lulus Pantas</title>
+  <meta name="description" content="Pinjaman pantas & mudah khas untuk kakitangan kerajaan dan swasta. Lulus dalam masa 1 jam.">
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/833/833472.png" />
+  <style>
+    :root {
+      --primary: #024443;
+      --accent: #faae2b;
+      --light-bg: #f4f4f4;
+      --white: #fff;
+      --dark-circle: #222;
+    }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: var(--light-bg);
+      color: #333;
+    }
+    header {
+      background: linear-gradient(rgba(2, 44, 67, 0.7), rgba(2, 44, 67, 0.7)), url('https://images.unsplash.com/photo-1556740749-887f6717d7e4?auto=format&fit=crop&w=1350&q=80') no-repeat center/cover;
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 48px; /* 字体放大 */
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 18px;
+    }
+    .btn {
+      display: inline-block;
+      background: var(--accent);
+      color: #000;
+      padding: 12px 24px;
+      margin-top: 20px;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 6px;
+      transition: 0.3s;
+    }
+    .btn:hover {
+      background: #ffc94a;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .stats {
+      display: flex;
+      justify-content: space-around;
+      background: var(--primary);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .stat {
+      flex: 1;
+      min-width: 150px;
+    }
+    .stat span {
+      display: block;
+      font-size: 36px;
+      font-weight: bold;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: var(--white);
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    h2 {
+      color: var(--primary);
+      margin-bottom: 20px;
+      font-size: 24px;
+      text-align: center;
+    }
+
+    .testimonial {
+      background: #e0f7fa;
+      padding: 15px;
+      border-left: 5px solid var(--accent);
+      border-radius: 6px;
+      font-style: italic;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+    }
+
+    iframe {
+      width: 100%;
+      height: 300px;
+      border: none;
+      border-radius: 8px;
+    }
+
+    footer {
+      background: #eee;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      color: #666;
+    }
+
+    .whatsapp {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #25D366;
+      color: white;
+      padding: 12px 18px;
+      border-radius: 50px;
+      font-weight: bold;
+      text-decoration: none;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+      z-index: 1000;
+    }
+
+    /* 新增图标特色区 */
+    .icon-features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(160px,1fr));
+      gap: 30px;
+      max-width: 1100px;
+      margin: 60px auto 80px;
+      text-align: center;
+    }
+    .feature {
+      background: var(--white);
+      padding: 30px 15px;
+      border-radius: 15px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transition: transform 0.3s ease;
+    }
+    .feature:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+    }
+    .icon-features .circle {
+      width: 80px;
+      height: 80px;
+      margin: 0 auto 15px auto;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 36px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      background: var(--dark-circle); /* 黑色背景 */
+    }
+    .feature p {
+      font-size: 16px;
+      font-weight: 600;
+      color: #222;
+      margin: 0;
+    }
+
+    @media (max-width: 600px) {
+      .stats {
+        flex-direction: column;
+        gap: 20px;
+      }
+      header h1 {
+        font-size: 36px; /* 手机稍微缩小 */
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Star Access Enterprise</h1>
+  <p>Pinjaman Peribadi Cepat & Selamat untuk Kakitangan Kerajaan & Swasta</p>
+  <a href="https://wa.me/60187881932" class="btn">Mohon Sekarang di WhatsApp</a>
+</header>
+
+<section class="icon-features">
+  <div class="feature">
+    <div class="circle">📞</div>
+    <p>Khidmat Pelanggan 24/7</p>
+  </div>
+  <div class="feature">
+    <div class="circle">💰</div>
+    <p>Pinjaman Mudah & Cepat</p>
+  </div>
+  <div class="feature">
+    <div class="circle">🔒</div>
+    <p>Privasi Terjamin</p>
+  </div>
+  <div class="feature">
+    <div class="circle">⚡</div>
+    <p>Kelulusan Pantas</p>
+  </div>
+  <div class="feature">
+    <div class="circle">📲</div>
+    <p>Permohonan Melalui WhatsApp</p>
+  </div>
+</section>
+
+<section class="stats">
+  <div class="stat">
+    <span>5000+</span>
+    Pelanggan Berpuas Hati
+  </div>
+  <div class="stat">
+    <span>99%</span>
+    Kadar Kelulusan
+  </div>
+  <div class="stat">
+    <span>5 Tahun</span>
+    Pengalaman Industri
+  </div>
+</section>
+
+<section>
+  <h2>Kelebihan Kami</h2>
+  <div class="grid">
+    <div class="card">✅ Tiada penjamin atau cagaran diperlukan</div>
+    <div class="card">✅ Lulus dalam masa 1 jam</div>
+    <div class="card">✅ Wang masuk hari yang sama</div>
+    <div class="card">✅ Maklumat anda dirahsiakan 100%</div>
+  </div>
+</section>
+
+<section>
+  <h2>Langkah Memohon</h2>
+  <div class="grid">
+    <div class="card">1️⃣ Hubungi kami melalui WhatsApp</div>
+    <div class="card">2️⃣ Kami sahkan maklumat & kelayakan</div>
+    <div class="card">3️⃣ Wang dimasukkan ke akaun anda</div>
+  </div>
+</section>
+
+<section>
+  <h2>Testimoni Pelanggan</h2>
+  <div class="grid">
+    <div class="testimonial">⭐️⭐️⭐️⭐️⭐️ “Servis pantas & profesional. Duit masuk 2 jam lepas apply.” – En. Faizal</div>
+    <div class="testimonial">⭐️⭐️⭐️⭐️⭐️ “Sangat sesuai untuk kakitangan swasta macam saya.” – Pn. Aina</div>
+    <div class="testimonial">⭐️⭐️⭐️⭐️⭐️ “Saya kerja kerajaan. Loan lulus dalam masa 1 jam je!” – Cik Nurul</div>
+  </div>
+</section>
+
+<section>
+  <h2>Lokasi Kami</h2>
+  <p><strong>Star Access Enterprise</strong><br>
+  16-1, Jalan Sejambak 14, Taman Bukit Dahlia,<br>
+  81700 Pasir Gudang, Johor</p>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15939.747157346587!2d103.8926884!3d1.4707751!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da6cf4894d2c03%3A0x72ed80144db82e3a!2s16-1%2C%20Jalan%20Sejambak%2014%2C%20Taman%20Bukit%20Dahlia%2C%2081700%20Pasir%20Gudang%2C%20Johor%2C%20Malaysia!5e0!3m2!1sen!2smy!4v1720937563870!5m2!1sen!2smy"></iframe>
+</section>
+
+<a href="https://wa.me/60187881932" class="whatsapp">💬 WhatsApp Kami</a>
+
+<footer>
+  © 2025 Star Access Enterprise · Didaftarkan dengan SSM · Semua Hak Cipta Terpelihara
+</footer>
+
+</body>
+</html>
